@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <!-- Работа с классами -->
+    <!-- 1 -->
+    <div id="elem1">Джавапон1</div>
+
+    <!-- 2 -->
+    <div class="www" id="elem2">Джaвапон2</div>
+
+    <!-- 3 -->
+    <div class="elem3" id="elem3_1">Джавапон3_1</div>
+    <div id="elem3_2">Джавапон3_2</div>
+
+    <!-- 4 -->
+    <div class="elem4" id="elem4_1">Джавапон4_1</div>
+    <div id="elem4_2">Джавапон4_2</div>
+
+    <!-- 5 -->
+    <div id="elem5" class="elem5_1 elem5_2">Джавапон5</div>
+
+    <!-- 6 -->
+    <div id="elem6" class="elem6_1 elem6_2">Джавапон6</div>
+
+    <!-- Работа с css -->
+    <!-- 7 -->
+    <div id="elem7" class="elem7">Джавапон7</div>
+
+    <!-- Свойство tagName -->
+    <!-- 1 -->
+    <button class="elem8" id="elem8" onclick="buttonClick8()">Джавапон8</button>
+    <br>
+
+    <!-- 2 -->
+    <button class="elem9" id="elem9" onclick="buttonClick9()">Джавапон9</button>
+    <br>
+
+    <!-- 3 -->
+    <a class="elem10" id="elem10" onclick="buttonClick10()">Джавапон10</a>
+    <div class="elem10" id="elem10" onclick="buttonClick10()">Джавапон10</div>
+    <div class="elem10" id="elem10" onclick="buttonClick10()">Джавапон10</div>
+
+    <!-- Вставка элементов через appendChild -->
+    <!-- 4 -->
+    <ol class="elem11" id="elem11"></ol>
+
+    <!-- 5 -->
+    <ul id="elem12"></ul>
+
+    <!-- Вставка элементов через insertAdjacentHTML -->
+    <!-- 1 -->
+    <div class="elem13" id="elem13">Джавапон13</div>
+
+    <!-- 2 -->
+    <div class="elem14" id="elem14">Джавапон14</div>
+
+    <!-- 3 -->
+    <div class="elem15" id="elem15">Джавапон15</div>
+
+    <!-- 4 -->
+    <div class="elem16" id="elem16">Джавапон16</div>
+
+    <!-- Удаление и клонирование -->
+    <!-- 1 -->
+    <div id="parent17" class="parent17">
+        Джавапон17
+        <div id="child17" class="child17">Джапончик17</div>
+    </div>
+    <button onclick="buttonClick17()">-Джавапончик</button>
+
+    <!-- 2 -->
+    <ol id="ol18">
+        <div class="djavaponchik18_1">Джавапончик18_1</div>
+        <div class="djavaponchik18_2">Джавапончик18_2</div>
+        <div class="djavaponchik18_3">Джавапончик18_3</div>
+        <div class="djavaponchik18_4">Джавапончик18_4</div>
+        <div class="djavaponchik18_5">Джавапончик18_5</div>
+    </ol>
+    <button onclick="buttonClick18()">-последний Джавапончик</button>
+    <br>
+
+    <!-- 3 -->
+    <button onclick="buttonClick19()" class="elem19" id="elem19">О нет, Джавапон, не пропадай</button>
+
+    <!-- 4 -->
+    <ol id="ol20">
+        <li onclick="liClick20(this)">Джавапончик20_1</li>
+        <li onclick="liClick20(this)">Джавапончик20_2</li>
+        <li onclick="liClick20(this)">Джавапончик20_3</li>
+        <li onclick="liClick20(this)">Джавапончик20_4</li>
+        <li onclick="liClick20(this)">Джавапончик20_5</li>
+    </ol>
+
+    <!-- 5 -->
+    <input type="text" id="input21">
+    <button onclick="buttonClick21()">Джаваклон</button>
+
+
+    <!-- Потомки -->
+    <!-- 1 -->
+    <div class="elem22" id="elem22">
+        <div class="elem22_1">Джавапончик22</div>
+        <div class="elem22_2">Джавапончик22</div>
+        <div class="elem22_3">Джавапончик22</div>
+        <div class="elem22_4">Джавапончик22</div>
+        <div class="elem22_5">Джавапончик22</div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- 2 -->
+    <div class="elem23" id="elem23">
+        <div class="elem23_1">Джавапончик23</div>
+        <div class="elem23_2">Джавапончик23</div>
+        <div class="elem23_3">Джавапончик23</div>
+        <div class="elem23_4">Джавапончик23</div>
+        <div class="elem23_5">Джавапончик23</div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- 3 -->
+    <div class="elem24" id="elem24">
+        <div class="elem24_1">Джавапончик24</div>
+        <div class="elem24_2">Джавапончик24</div>
+        <div class="elem24_3">Джавапончик24</div>
+        <div class="elem24_4">Джавапончик24</div>
+        <div class="elem24_5">Джавапончик24</div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- Соседи -->
+    <!-- 4 -->
+    <div class="elem25_sibling">Джавапон25 сосед</div>
+    <div class="elem25" id="elem25">Джавапон25</div>
+
+    <br>
+    <br>
+
+    <!-- 5 -->    
+    <div class="elem26" id="elem26">Джавапон26</div>
+    <div class="elem26_sibling">Джавапон26 сосед</div>
+
+    <br>
+    <br>
+
+    <!-- 6 -->
+    <div class="elem27_sibling">Джавапон27 сосед</div>
+    <div class="elem27" id="elem27">Джавапон27</div>
+    <div class="elem27_sibling">Джавапон27 сосед</div>
+
+        <br>
+        <br>
+
+    <!-- Родители -->
+    <!-- 7 -->
+    <div class="old28">Старческий Джавапон28
+        <div id="elem28" class="new">Джавапон28</div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- 8 -->
+    <div class="old29">Старческий Джавапон
+        <div class="medium29">Джавапон
+            <div class="new29">Джавапончики</div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- На величину границы -->
+    <!-- 1 -->
+    <div id="elem30" class="elem30">Джавапон30</div>
+    <button onclick="buttonClick30()">Джаваклик</button>
+
+    <!-- 2 -->
+    <div id="elem31" class="elem30">Джавапон31</div>
+    <button onclick="buttonClick31()">Джаваклик</button>
+
+    <!-- На полный размер элемента -->
+    <!-- 3 -->
+    <div id="elem32" class="elem32">Джавапон32</div>
+    <button onclick="buttonClick32()">Джаваклик</button>
+
+    <!-- 4 -->
+    <div id="elem33" class="elem32">Джавапон33</div>
+    <button onclick="buttonClick33()">Джаваклик</button>
+
+    <!-- 5 -->
+    <div id="elem34" class="elem32">Джавапон34</div>
+    <button onclick="buttonClick34()">Джаваклик</button>
+
+    <!-- 6 -->
+    <div id="elem35" class="elem32">Джавапон35</div>
+    <button onclick="buttonClick35()">Джаваклик</button>
+
+    <!-- Работа с getComputedStyle -->
+    <!-- 1 -->
+    <div id="elem36" class="elem32">Джавапон36</div>
+    <button onclick="buttonClick36()">Джаваклик</button>
+
+    <!-- Прокрутка элемента -->
+    <!-- 2 -->
+    <div id="elem37"></div>
+    <button onclick="buttonClick37()">Джаваклик37</button>    
+
+    <!-- 3 -->
+    <div id="elem38"></div>
+    <button onclick="buttonClick38()">Джаваклик38</button>  
+
+    <!-- 4 -->
+    <div id="elem39"></div>
+    <button onclick="buttonClick39()">Джаваклик39</button>  
+
+    <!-- 5 -->
+    <div id="elem40"></div>
+    <button onclick="buttonClick40()">Джаваклик40</button>  
+
+    <!-- Прокрутка элемента -->
+    <!-- 1 -->
+    <div id="elem41"></div>
+    <button onclick="buttonClick41()">Джаваклик41</button>  
+
+    <!-- 2 -->
+    <div id="elem42"></div>
+    <button onclick="buttonClick42()">Джаваклик42</button> 
+    
+
+    <!-- 3 -->
+    <div id="elem43"></div>
+    <button onclick="buttonClick43()">Джаваклик43</button>  
+
+    <!-- Прокрутка страницы -->
+    <!-- 4 -->
+    <div id="elem44"></div>
+    <button onclick="buttonClick44()">Джаваклик44</button>
+    
+    <!-- 5 -->
+    <div id="elem45"></div>
+    <button onclick="buttonClick45()">Джаваклик45</button>  
+
+    <br>
+    <br>
+
+    <!-- 6 -->
+    <button onclick="buttonClick46()">Джаваклик46</button>
+
+    <br>
+    <br>
+
+    <!-- 7 -->
+    <button onclick="buttonClick47()">Джаваклик47</button>
+
+    <br>
+    <br>
+
+    <!-- Практика -->
+    <!-- 3 -->
+    <button onclick="buttonClick48()">Джаваклик48</button>
+
+    <br>
+    <br>
+
+    <!-- 4 -->
+    <button onclick="buttonClick49()">Джаваклик49</button>
+
+    <br>
+    <br>
+
+    <!-- 5 -->
+    <button onclick="buttonClick50()">Джаваклик50</button>
+
+    <br>
+    <br>
+
+    <!-- 6 -->
+    <button onclick="buttonClick51()">Джаваклик51</button>
+
+
+
+
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
